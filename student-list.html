@@ -131,169 +131,71 @@
 	<div class="row">
 		<div class="col-sm-2 col-md-2 col-lg-2">
 			<div class="list-group m-top-3">
-	<div class="list-group-item list-title-item">
-		課程管理
-	</div>
-	<a href="subject-list.html" class="list-group-item">
-		<span class="glyphicon glyphicon-calendar"></span>課程列表
-	</a>
-	<a data-toggle="modal" href="#modal-select-contact" class="list-group-item">
-		<span class="glyphicon glyphicon-notebook"></span>管理聯絡簿
-	</a>
-	<a data-toggle="modal" href="#modal-select-exam" class="list-group-item">
-		<span class="glyphicon glyphicon-pencil"></span>成績登記
-	</a>
-	<a data-toggle="modal" href="#modal-select-rollcall" class="list-group-item">
-		<span class="glyphicon glyphicon-check"></span>上課點名
-	</a>
-	<a data-toggle="modal" href="#modal-select-student" class="list-group-item">
-		<span class="glyphicon glyphicon-user"></span>學生列表
-	</a>
-</div>
+				<div class="list-group-item list-title-item">
+					課程管理
+				</div>
+				<a href="subject-list.html" class="list-group-item">
+					<span class="glyphicon glyphicon-calendar"></span>課程列表
+				</a>
+				<a data-toggle="modal" href="#modal-select-contact" class="list-group-item">
+					<span class="glyphicon glyphicon-notebook"></span>管理聯絡簿
+				</a>
+				<a data-toggle="modal" href="#modal-select-exam" class="list-group-item">
+					<span class="glyphicon glyphicon-pencil"></span>成績登記
+				</a>
+				<a data-toggle="modal" href="#modal-select-rollcall" class="list-group-item">
+					<span class="glyphicon glyphicon-check"></span>上課點名
+				</a>
+				<a data-toggle="modal" href="#modal-select-student" class="list-group-item">
+					<span class="glyphicon glyphicon-user"></span>學生列表
+				</a>
+			</div>
 		</div><!-- col-md-2 col-lg-2 -->
 		<div class="col-sm-10 col-md-10 col-lg-10">
 			<div class="page-block">
 				<div class="page-header">
 					<div class="row">
 						<div class="col-lg-4 col-md-4 col-sm-4">
-							<h3>成績登記</h3>
+							<h3>學生列表</h3>
 						</div><!-- /col-lg-4 col-md-4 -->
 						<div class="col-lg-8 col-md-8 col-sm-8">
-							<a class="btn btn-default btn-xs m-top-2 pull-right" data-toggle="modal" href="#modal-exam">新增成績</a>
+							<a class="btn btn-default btn-xs m-top-2 pull-right" data-toggle="modal" href="#modal-add-student">新增學生</a>
 						</div><!-- /col-lg-8 col-md-8 -->
 					</div><!-- /row -->
 				</div><!-- /page-header -->
 				<h4>【高一數學】<small>班級 1（26 人）</small></h4>
-				<table class="table table-bordered text-center">
+				<table class="table table-striped">
 					<thead>
 						<tr>
-							<th></th>
-							<th>2014/01/01 <a data-toggle="modal" href="#modal-exam-edit"><span class="glyphicon glyphicon-pencil"></span></a><br>第一~五課</th>
-							<th></th>
-							<th></th>
-							<th></th>
-							<th></th>
-							<th></th>
-							<th></th>
-							<th></th>
-							<th></th>
+							<th class="text-left">姓名</th>
+							<th class="text-right">管理</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td>王小明</td>
-							<td>70</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
+							<td class="text-right">
+								<a class="btn btn-default btn-xs" data-toggle="modal" href="#modal-remove-student">移除</a>
+							</td>
 						</tr>
 						<tr>
 							<td>王中明</td>
-							<td>90</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
+							<td class="text-right">
+								<a class="btn btn-default btn-xs" data-toggle="modal" href="#modal-remove-student">移除</a>
+							</td>
 						</tr>
 						<tr>
 							<td>王大明</td>
-							<td>30</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>張小明</td>
-							<td>70</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>張中明</td>
-							<td>90</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>張大明</td>
-							<td>30</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>李小明</td>
-							<td>70</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>李中明</td>
-							<td>90</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>李大明</td>
-							<td>30</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
+							<td class="text-right">
+								<a class="btn btn-default btn-xs" data-toggle="modal" href="#modal-remove-student">移除</a>
+							</td>
 						</tr>
 					</tbody>
 				</table>
 			</div><!-- /page-block -->
 		</div><!-- /col-md-10 col-lg-10 -->
 	</div><!-- /row -->
-</div><!-- /container -->
+			</div><!-- /container -->
 		</div>
 
 		<footer id="footer">

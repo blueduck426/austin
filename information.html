@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Template</title>
-    <!-- Mobile device set -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="utf-8">
+		<title>Template</title>
+		<!-- Mobile device set -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Style -->
-    <link href="stylesheets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+		<!-- Style -->
+		<link href="assets/stylesheets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
 
-    <!-- html5 for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+		<!-- html5 for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 
-  </head>
-  <body>
-    <a id="scrolltotop"><span class="glyphicon glyphicon-chevron-up"></span></a>
-    <div id="wrap">
-      
-      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	</head>
+	<body>
+		<a id="scrolltotop"><span class="glyphicon glyphicon-chevron-up"></span></a>
+		<div id="wrap">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
@@ -37,7 +36,6 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
 				<li><a href="tutor.html">Tutor</a></li>
-				<li><a href="video.html">Video</a></li>
 				<li><a href="information.html">Information</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
@@ -48,6 +46,7 @@
 						<li><a data-toggle="modal" href="#modal-select-contact">管理聯絡簿</a></li>
 						<li><a data-toggle="modal" href="#modal-select-exam" >成績登記</a></li>
 						<li><a data-toggle="modal" href="#modal-select-rollcall" >上課點名</a></li>
+						<li><a data-toggle="modal" href="#modal-select-student">學生列表</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">
@@ -192,9 +191,9 @@
 		</div><!-- /col-lg-4 col-md-4 -->
 	</div><!-- /row -->
 </div><!-- /container -->
-    </div>
+		</div>
 
-    <footer id="footer">
+		<footer id="footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-4 col-md-6 col-lg-6 ">
@@ -213,7 +212,7 @@
 		</div><!-- /row -->
 	</div><!-- /container -->
 </footer><!-- /footer -->
-    <!-- login Modal -->
+		<!-- login Modal -->
 <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -281,7 +280,7 @@
 			</form>
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal-dialog -->
-</div><!-- /.modal --><!-- login Modal -->
+</div><!-- /.modal --><!-- comment Modal -->
 <div class="modal fade" id="modal-comment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -303,7 +302,7 @@
 			</form>
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal-dialog -->
-</div><!-- /.modal --><!-- login Modal -->
+</div><!-- /.modal --><!-- exam Modal -->
 <div class="modal fade" id="modal-exam" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -316,7 +315,41 @@
 					<div class="form-group">
 						<label class="col-sm-3 control-label">日期</label>
 						<div class="col-sm-9">
-							<input type="date" class="form-control">
+							<div class="row">
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-right-0">
+									<select class="form-control">
+										<option>2014</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div><!-- /col-sm-2 col-md-2 col-lg-2 -->
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-right-0">
+									<select class="form-control">
+										<option>一月</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div><!-- /col-sm-2 col-md-2 col-lg-2 -->
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-right-0">
+									<select class="form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div><!-- /col-sm-2 col-md-2 col-lg-2 -->
+							</div><!-- /row -->
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">考試範圍</label>
+						<div class="col-sm-9">
+							<input class="form-control">
 						</div>
 					</div><!-- /form-group -->
 					<hr>
@@ -382,7 +415,7 @@
 			</form>
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal-dialog -->
-</div><!-- /.modal --><!-- login Modal -->
+</div><!-- /.modal --><!-- exam-edit Modal -->
 <div class="modal fade" id="modal-exam-edit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -395,7 +428,41 @@
 					<div class="form-group">
 						<label class="col-sm-3 control-label">日期</label>
 						<div class="col-sm-9">
-							<input type="date" class="form-control">
+							<div class="row">
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-right-0">
+									<select class="form-control">
+										<option>2014</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div><!-- /col-sm-2 col-md-2 col-lg-2 -->
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-right-0">
+									<select class="form-control">
+										<option>一月</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div><!-- /col-sm-2 col-md-2 col-lg-2 -->
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-right-0">
+									<select class="form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div><!-- /col-sm-2 col-md-2 col-lg-2 -->
+							</div><!-- /row -->
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">考試範圍</label>
+						<div class="col-sm-9">
+							<input class="form-control">
 						</div>
 					</div><!-- /form-group -->
 					<hr>
@@ -461,7 +528,7 @@
 			</form>
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal-dialog -->
-</div><!-- /.modal --><!-- forget Modal -->
+</div><!-- /.modal --><!-- request Modal -->
 <div class="modal fade" id="modal-request" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -476,7 +543,7 @@
 			</form>
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal-dialog -->
-</div><!-- /.modal --><!-- login Modal -->
+</div><!-- /.modal --><!-- select-exam Modal -->
 <div class="modal fade" id="modal-select-exam" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -504,7 +571,7 @@
 			</form>
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal-dialog -->
-</div><!-- /.modal --><!-- login Modal -->
+</div><!-- /.modal --><!-- select-contact Modal -->
 <div class="modal fade" id="modal-select-contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -532,7 +599,7 @@
 			</form>
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal-dialog -->
-</div><!-- /.modal --><!-- login Modal -->
+</div><!-- /.modal --><!-- select-rollcall Modal -->
 <div class="modal fade" id="modal-select-rollcall" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -560,7 +627,277 @@
 			</form>
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal-dialog -->
-</div><!-- /.modal --><!-- login Modal -->
+</div><!-- /.modal --><!-- select-student Modal -->
+<div class="modal fade" id="modal-select-student" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">選擇班級</h4>
+			</div>
+			<form role="form">
+				<div class="modal-body">
+					<div class="form-group m-bottom-0">
+						<label class="control-label">請選擇欲管理學生列表之班級</label>
+						<select class="form-control">
+							<option>XX 課程 班級 1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</div><!-- /form-group -->
+				</div><!-- /modal-body -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<a href="student-list.html" class="btn btn-primary">確定</a>
+				</div><!-- /modal-footer -->
+			</form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal --><!-- add-student Modal -->
+<div class="modal fade" id="modal-add-student" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">新增學生</h4>
+			</div>
+			<form role="form">
+				<div class="modal-body">
+					<div class="form-group m-bottom-0">
+						<label class="control-label">請輸入學生姓名、email 或電話搜尋</label>
+						<input type="text" class="form-control">
+					</div><!-- /form-group -->
+				</div><!-- /modal-body -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<a data-toggle="modal" href="#modal-add-student-2" class="btn btn-primary">搜尋</a>
+				</div><!-- /modal-footer -->
+			</form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- add-student-2 Modal -->
+<div class="modal fade" id="modal-add-student-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">新增學生</h4>
+			</div>
+			<form role="form">
+				<div class="modal-body">
+					<div class="checkbox m-bottom-2">
+						<label>
+							<input type="checkbox">
+							<img class="member-img" src="http://fakeimg.pl/300x300/7F8C8D/FFF/?text=img+Member">
+							王小明（XX高中三年級）
+						</label>
+					</div><!-- /checkbox -->
+					<div class="checkbox m-bottom-2">
+						<label>
+							<input type="checkbox">
+							<img class="member-img" src="http://fakeimg.pl/300x300/7F8C8D/FFF/?text=img+Member">
+							王小明（OO高中一年級）
+						</label>
+					</div><!-- /checkbox -->
+					<div class="checkbox m-bottom-2">
+						<label>
+							<input type="checkbox">
+							<img class="member-img" src="http://fakeimg.pl/300x300/7F8C8D/FFF/?text=img+Member">
+							王小明（OO國中二年級）
+						</label>
+					</div><!-- /checkbox -->
+				</div><!-- /modal-body -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary" data-dismiss="modal">確定新增</button>
+				</div><!-- /modal-footer -->
+			</form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal --><!-- remove-student Modal -->
+<div class="modal fade" id="modal-remove-student" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">移除學生</h4>
+			</div>
+			<div class="modal-body">
+				您確定要將 XXX 從 A 課程中移除？
+			</div><!-- /modal-body -->
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+				<button type="button" class="btn btn-primary" data-dismiss="modal">確定</button>
+			</div><!-- /modal-footer -->
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal --><!-- add-subject Modal -->
+<div class="modal fade" id="modal-add-subject" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">新增課程</h4>
+			</div>
+			<form role="form">
+				<div class="modal-body">
+					<div class="form-group">
+						<label class="control-label">課程名稱</label>
+						<input type="text" class="form-control">
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="control-label">上課星期</label>
+						<div>
+							<label class="checkbox-inline">
+								<input type="checkbox" id="" value="option1"> 一
+							</label>
+							<label class="checkbox-inline">
+								<input type="checkbox" id="" value="option2"> 二
+							</label>
+							<label class="checkbox-inline">
+								<input type="checkbox" id="" value="option3"> 三
+							</label>
+							<label class="checkbox-inline">
+								<input type="checkbox" id="" value="option4"> 四
+							</label>
+							<label class="checkbox-inline">
+								<input type="checkbox" id="" value="option5"> 五
+							</label>
+							<label class="checkbox-inline">
+								<input type="checkbox" id="" value="option6"> 六
+							</label>
+							<label class="checkbox-inline">
+								<input type="checkbox" id="" value="option6"> 日
+							</label>
+						</div><!-- /checkbox -->
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="control-label">上課開始時間</label>
+						<div class="clearfix">
+							<select class="form-control w-70 pull-left m-right-1">
+								<option>AM</option>
+								<option>PM</option>
+							</select>
+							<input type="text" class="form-control w-50 pull-left" value="08">
+							<span class="pull-left time-text">：</span>
+							<input type="text" class="form-control w-50 pull-left" value="00">
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="control-label">上課結束時間</label>
+						<div class="clearfix">
+							<select class="form-control w-70 pull-left m-right-1">
+								<option>AM</option>
+								<option>PM</option>
+							</select>
+							<input type="text" class="form-control w-50 pull-left" value="08">
+							<span class="pull-left time-text">：</span>
+							<input type="text" class="form-control w-50 pull-left" value="00">
+						</div>
+					</div><!-- /form-group -->
+				</div><!-- /modal-body -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary" data-dismiss="modal">確定</button>
+				</div><!-- /modal-footer -->
+			</form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal --><!-- edit-subject Modal -->
+<div class="modal fade" id="modal-edit-subject" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">編輯課程</h4>
+			</div>
+			<form role="form">
+				<div class="modal-body">
+					<div class="form-group">
+						<label class="control-label">課程名稱</label>
+						<input type="text" class="form-control">
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="control-label">上課星期</label>
+						<div>
+							<label class="checkbox-inline">
+								<input type="checkbox" id="" value="option1"> 一
+							</label>
+							<label class="checkbox-inline">
+								<input type="checkbox" id="" value="option2"> 二
+							</label>
+							<label class="checkbox-inline">
+								<input type="checkbox" id="" value="option3"> 三
+							</label>
+							<label class="checkbox-inline">
+								<input type="checkbox" id="" value="option4"> 四
+							</label>
+							<label class="checkbox-inline">
+								<input type="checkbox" id="" value="option5"> 五
+							</label>
+							<label class="checkbox-inline">
+								<input type="checkbox" id="" value="option6"> 六
+							</label>
+							<label class="checkbox-inline">
+								<input type="checkbox" id="" value="option6"> 日
+							</label>
+						</div><!-- /checkbox -->
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="control-label">上課開始時間</label>
+						<div class="clearfix">
+							<select class="form-control w-70 pull-left m-right-1">
+								<option>AM</option>
+								<option>PM</option>
+							</select>
+							<input type="text" class="form-control w-50 pull-left" value="08">
+							<span class="pull-left time-text">：</span>
+							<input type="text" class="form-control w-50 pull-left" value="00">
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="control-label">上課結束時間</label>
+						<div class="clearfix">
+							<select class="form-control w-70 pull-left m-right-1">
+								<option>AM</option>
+								<option>PM</option>
+							</select>
+							<input type="text" class="form-control w-50 pull-left" value="08">
+							<span class="pull-left time-text">：</span>
+							<input type="text" class="form-control w-50 pull-left" value="00">
+						</div>
+					</div><!-- /form-group -->
+				</div><!-- /modal-body -->
+				<div class="modal-footer">
+					<a data-toggle="modal" href="#modal-close-subject" class="btn btn-danger pull-left" data-dismiss="modal">關閉課程</a>
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary" data-dismiss="modal">確定</button>
+				</div><!-- /modal-footer -->
+			</form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal --><!-- close-subject Modal -->
+<div class="modal fade" id="modal-close-subject" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">關閉課程</h4>
+			</div>
+			<div class="modal-body">
+				您確定要將 XXX 課程關閉？
+			</div><!-- /modal-body -->
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+				<button type="button" class="btn btn-primary" data-dismiss="modal">確定</button>
+			</div><!-- /modal-footer -->
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal --><!-- rollcall Modal -->
 <div class="modal fade" id="modal-rollcall" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -573,82 +910,59 @@
 					<div class="form-group">
 						<label class="col-sm-3 control-label">日期</label>
 						<div class="col-sm-9">
-							<input type="date" class="form-control">
+							<div class="row">
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-right-0">
+									<select class="form-control">
+										<option>2014</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div><!-- /col-sm-2 col-md-2 col-lg-2 -->
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-right-0">
+									<select class="form-control">
+										<option>一月</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div><!-- /col-sm-2 col-md-2 col-lg-2 -->
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-right-0">
+									<select class="form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div><!-- /col-sm-2 col-md-2 col-lg-2 -->
+							</div><!-- /row -->
 						</div>
 					</div><!-- /form-group -->
 					<hr>
-					<div class="form-group">
-						<label class="col-sm-3 control-label">王小明</label>
-						<div class="col-sm-9">
-							<div class="checkbox">
-								<input type="checkbox">
-							</div><!-- /checkbox -->
-						</div>
-					</div><!-- /form-group -->
-					<div class="form-group">
-						<label class="col-sm-3 control-label">王中明</label>
-						<div class="col-sm-9">
-							<div class="checkbox">
-								<input type="checkbox">
-							</div><!-- /checkbox -->
-						</div>
-					</div><!-- /form-group -->
-					<div class="form-group">
-						<label class="col-sm-3 control-label">王大明</label>
-						<div class="col-sm-9">
-							<div class="checkbox">
-								<input type="checkbox">
-							</div><!-- /checkbox -->
-						</div>
-					</div><!-- /form-group -->
-					<div class="form-group">
-						<label class="col-sm-3 control-label">張小明</label>
-						<div class="col-sm-9">
-							<div class="checkbox">
-								<input type="checkbox">
-							</div><!-- /checkbox -->
-						</div>
-					</div><!-- /form-group -->
-					<div class="form-group">
-						<label class="col-sm-3 control-label">張中明</label>
-						<div class="col-sm-9">
-							<div class="checkbox">
-								<input type="checkbox">
-							</div><!-- /checkbox -->
-						</div>
-					</div><!-- /form-group -->
-					<div class="form-group">
-						<label class="col-sm-3 control-label">張大明</label>
-						<div class="col-sm-9">
-							<div class="checkbox">
-								<input type="checkbox">
-							</div><!-- /checkbox -->
-						</div>
-					</div><!-- /form-group -->
-					<div class="form-group">
-						<label class="col-sm-3 control-label">李小明</label>
-						<div class="col-sm-9">
-							<div class="checkbox">
-								<input type="checkbox">
-							</div><!-- /checkbox -->
-						</div>
-					</div><!-- /form-group -->
-					<div class="form-group">
-						<label class="col-sm-3 control-label">李中明</label>
-						<div class="col-sm-9">
-							<div class="checkbox">
-								<input type="checkbox">
-							</div><!-- /checkbox -->
-						</div>
-					</div><!-- /form-group -->
-					<div class="form-group">
-						<label class="col-sm-3 control-label">李大明</label>
-						<div class="col-sm-9">
-							<div class="checkbox">
-								<input type="checkbox">
-							</div><!-- /checkbox -->
-						</div>
-					</div><!-- /form-group -->
+					<div class="checkbox m-bottom-2">
+						<label>
+							<input type="checkbox">
+							<img class="member-img" src="http://fakeimg.pl/300x300/7F8C8D/FFF/?text=img+Member">
+							王小明
+						</label>
+					</div><!-- /checkbox -->
+					<div class="checkbox m-bottom-2">
+						<label>
+							<input type="checkbox">
+							<img class="member-img" src="http://fakeimg.pl/300x300/7F8C8D/FFF/?text=img+Member">
+							王中明
+						</label>
+					</div><!-- /checkbox -->
+					<div class="checkbox m-bottom-2">
+						<label>
+							<input type="checkbox">
+							<img class="member-img" src="http://fakeimg.pl/300x300/7F8C8D/FFF/?text=img+Member">
+							王大明
+						</label>
+					</div><!-- /checkbox -->
 				</div><!-- /modal-body -->
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
@@ -657,7 +971,7 @@
 			</form>
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal-dialog -->
-</div><!-- /.modal --><!-- login Modal -->
+</div><!-- /.modal --><!-- rollcall-edit Modal -->
 <div class="modal fade" id="modal-rollcall-edit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -670,82 +984,59 @@
 					<div class="form-group">
 						<label class="col-sm-3 control-label">日期</label>
 						<div class="col-sm-9">
-							<input type="date" class="form-control">
+							<div class="row">
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-right-0">
+									<select class="form-control">
+										<option>2014</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div><!-- /col-sm-2 col-md-2 col-lg-2 -->
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-right-0">
+									<select class="form-control">
+										<option>一月</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div><!-- /col-sm-2 col-md-2 col-lg-2 -->
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-right-0">
+									<select class="form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div><!-- /col-sm-2 col-md-2 col-lg-2 -->
+							</div><!-- /row -->
 						</div>
 					</div><!-- /form-group -->
 					<hr>
-					<div class="form-group">
-						<label class="col-sm-3 control-label">王小明</label>
-						<div class="col-sm-9">
-							<div class="checkbox">
-								<input type="checkbox">
-							</div><!-- /checkbox -->
-						</div>
-					</div><!-- /form-group -->
-					<div class="form-group">
-						<label class="col-sm-3 control-label">王中明</label>
-						<div class="col-sm-9">
-							<div class="checkbox">
-								<input type="checkbox">
-							</div><!-- /checkbox -->
-						</div>
-					</div><!-- /form-group -->
-					<div class="form-group">
-						<label class="col-sm-3 control-label">王大明</label>
-						<div class="col-sm-9">
-							<div class="checkbox">
-								<input type="checkbox">
-							</div><!-- /checkbox -->
-						</div>
-					</div><!-- /form-group -->
-					<div class="form-group">
-						<label class="col-sm-3 control-label">張小明</label>
-						<div class="col-sm-9">
-							<div class="checkbox">
-								<input type="checkbox">
-							</div><!-- /checkbox -->
-						</div>
-					</div><!-- /form-group -->
-					<div class="form-group">
-						<label class="col-sm-3 control-label">張中明</label>
-						<div class="col-sm-9">
-							<div class="checkbox">
-								<input type="checkbox">
-							</div><!-- /checkbox -->
-						</div>
-					</div><!-- /form-group -->
-					<div class="form-group">
-						<label class="col-sm-3 control-label">張大明</label>
-						<div class="col-sm-9">
-							<div class="checkbox">
-								<input type="checkbox">
-							</div><!-- /checkbox -->
-						</div>
-					</div><!-- /form-group -->
-					<div class="form-group">
-						<label class="col-sm-3 control-label">李小明</label>
-						<div class="col-sm-9">
-							<div class="checkbox">
-								<input type="checkbox">
-							</div><!-- /checkbox -->
-						</div>
-					</div><!-- /form-group -->
-					<div class="form-group">
-						<label class="col-sm-3 control-label">李中明</label>
-						<div class="col-sm-9">
-							<div class="checkbox">
-								<input type="checkbox">
-							</div><!-- /checkbox -->
-						</div>
-					</div><!-- /form-group -->
-					<div class="form-group">
-						<label class="col-sm-3 control-label">李大明</label>
-						<div class="col-sm-9">
-							<div class="checkbox">
-								<input type="checkbox">
-							</div><!-- /checkbox -->
-						</div>
-					</div><!-- /form-group -->
+					<div class="checkbox m-bottom-2">
+						<label>
+							<input type="checkbox">
+							<img class="member-img" src="http://fakeimg.pl/300x300/7F8C8D/FFF/?text=img+Member">
+							王小明
+						</label>
+					</div><!-- /checkbox -->
+					<div class="checkbox m-bottom-2">
+						<label>
+							<input type="checkbox">
+							<img class="member-img" src="http://fakeimg.pl/300x300/7F8C8D/FFF/?text=img+Member">
+							王中明
+						</label>
+					</div><!-- /checkbox -->
+					<div class="checkbox m-bottom-2">
+						<label>
+							<input type="checkbox">
+							<img class="member-img" src="http://fakeimg.pl/300x300/7F8C8D/FFF/?text=img+Member">
+							王大明
+						</label>
+					</div><!-- /checkbox -->
 				</div><!-- /modal-body -->
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
@@ -756,56 +1047,56 @@
 	</div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-    <!-- Javascripts -->
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script>
-        jQuery(document).ready(function ($) {
-          $(window).scroll(function () {
-            if ($(this).scrollTop() > 200) {
-              $('#scrolltotop').fadeIn('slow');
-            } else {
-              $('#scrolltotop').fadeOut('slow');
-            }
-          });
-          $('#scrolltotop').click(function () {
-            $("html, body").animate({
-              scrollTop: 0
-            }, 500);
-            return false;
-          });
-        });
-      </script>
-    <!-- from Bootstrap 3 -->
-    <script src="javascripts/affix.js"></script>
-    <script src="javascripts/alert.js"></script>
-    <script src="javascripts/button.js"></script>
-    <script src="javascripts/carousel.js"></script>
-    <script src="javascripts/collapse.js"></script>
-    <script src="javascripts/dropdown.js"></script>
-    <script src="javascripts/modal.js"></script>
-    <script src="javascripts/popover.js"></script>
-    <script src="javascripts/scrollspy.js"></script>
-    <script src="javascripts/tab.js"></script>
-    <script src="javascripts/tooltip.js"></script>
-    <script src="javascripts/transition.js"></script>
-    <script src="javascripts/bootstrap_calendar.js"></script>
-    <script type="text/javascript">
-      $(document).ready( function(){
-        theMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-        theDays = ["日", "一", "二", "三", "四", "五", "六"];
+		<!-- Javascripts -->
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script>
+				jQuery(document).ready(function ($) {
+					$(window).scroll(function () {
+						if ($(this).scrollTop() > 200) {
+							$('#scrolltotop').fadeIn('slow');
+						} else {
+							$('#scrolltotop').fadeOut('slow');
+						}
+					});
+					$('#scrolltotop').click(function () {
+						$("html, body").animate({
+							scrollTop: 0
+						}, 500);
+						return false;
+					});
+				});
+			</script>
+		<!-- from Bootstrap 3 -->
+		<script src="assets/javascripts/affix.js"></script>
+		<script src="assets/javascripts/alert.js"></script>
+		<script src="assets/javascripts/button.js"></script>
+		<script src="assets/javascripts/carousel.js"></script>
+		<script src="assets/javascripts/collapse.js"></script>
+		<script src="assets/javascripts/dropdown.js"></script>
+		<script src="assets/javascripts/modal.js"></script>
+		<script src="assets/javascripts/popover.js"></script>
+		<script src="assets/javascripts/scrollspy.js"></script>
+		<script src="assets/javascripts/tab.js"></script>
+		<script src="assets/javascripts/tooltip.js"></script>
+		<script src="assets/javascripts/transition.js"></script>
+		<script src="assets/javascripts/bootstrap_calendar.js"></script>
+		<script type="text/javascript">
+			$(document).ready( function(){
+				theMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+				theDays = ["日", "一", "二", "三", "四", "五", "六"];
 
-        $('.calendar_test').calendar({
-          months: theMonths,
-          days: theDays,
-          req_ajax: {
-            type: 'get',
-            url: 'json.php'
-          }
-        });
-      });
-    </script>
-    <script src="javascripts/jquery.sequence-min.js"></script>
-    <script src="javascripts/contact.js"></script>
-    <script src="javascripts/qubico.js"></script>
-  </body>
+				$('.calendar_test').calendar({
+					months: theMonths,
+					days: theDays,
+					req_ajax: {
+						type: 'get',
+						url: 'json.php'
+					}
+				});
+			});
+		</script>
+		<script src="assets/javascripts/jquery.sequence-min.js"></script>
+		<script src="assets/javascripts/contact.js"></script>
+		<script src="assets/javascripts/qubico.js"></script>
+	</body>
 </html>
