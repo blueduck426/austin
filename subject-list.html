@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Template</title>
+    <!-- Mobile device set -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Style -->
+    <link href="stylesheets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+
+    <!-- html5 for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <a id="scrolltotop"><span class="glyphicon glyphicon-chevron-up"></span></a>
+    <div id="wrap">
+      
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index-login.html">Austin</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><a href="tutor.html">Tutor</a></li>
+				<li><a href="video.html">Video</a></li>
+				<li><a href="information.html">Information</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-briefcase"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="subject-list.html">課程列表</a></li>
+						<li><a data-toggle="modal" href="#modal-select-contact">管理聯絡簿</a></li>
+						<li><a data-toggle="modal" href="#modal-select-exam" >成績登記</a></li>
+						<li><a data-toggle="modal" href="#modal-select-rollcall" >上課點名</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="contact-book.html" class="dropdown-toggle" data-toggle="dropdown">
+						<span class="badge">3</span>
+						<span class="glyphicon glyphicon-notebook"></span>
+					</a>
+					<ul class="dropdown-menu contact-dropdown">
+						<li><a href="contact-book.html"><img class="member-img pull-left" src="http://fakeimg.pl/300x300/7F8C8D/FFF/?text=img+Member">XX 課程 A 老師新增 3 月 7 日的聯絡簿</a></li>
+						<li><a href="contact-book.html"><img class="member-img pull-left" src="http://fakeimg.pl/300x300/7F8C8D/FFF/?text=img+Member">XX 課程 A 老師更新 3 月 7 日的聯絡簿</a></li>
+						<li><a href="contact-book.html"><img class="member-img pull-left" src="http://fakeimg.pl/300x300/7F8C8D/FFF/?text=img+Member">XX 課程 B 老師新增 3 月 6 日的聯絡簿</a></li>
+						<li><a href="contact-book.html"><img class="member-img pull-left" src="http://fakeimg.pl/300x300/7F8C8D/FFF/?text=img+Member">XX 課程 B 老師更新 3 月 6 日的聯絡簿</a></li>
+						<li><a href="contact-book.html"><img class="member-img pull-left" src="http://fakeimg.pl/300x300/7F8C8D/FFF/?text=img+Member">XX 課程 A 老師新增 3 月 5 日的聯絡簿</a></li>
+						<li class="more"><a href="contact-book.html">前往聯絡簿</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="message.html" class="dropdown-toggle" data-toggle="dropdown">
+						<span class="badge">5</span>
+						<span class="glyphicon glyphicon-bubbles"></span>
+					</a>
+					<ul class="dropdown-menu message-dropdown">
+						<li>
+							<a href="message.html">
+								<img class="member-img pull-left" src="http://fakeimg.pl/300x300/7F8C8D/FFF/?text=img+Member">
+								<h4>Account 1 Account 1 Account 1 Account 1</h4>
+								<p>訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容</p>
+							</a>
+						</li>
+						<li>
+							<a href="message.html">
+								<img class="member-img pull-left" src="http://fakeimg.pl/300x300/7F8C8D/FFF/?text=img+Member">
+								<h4>Account 2</h4>
+								<p>訊息內容訊息內容訊息內容</p>
+							</a>
+						</li>
+						<li>
+							<a href="message.html">
+								<img class="member-img pull-left" src="http://fakeimg.pl/300x300/7F8C8D/FFF/?text=img+Member">
+								<h4>Account 3</h4>
+								<p>訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容</p>
+							</a>
+						</li>
+						<li>
+							<a href="message.html">
+								<img class="member-img pull-left" src="http://fakeimg.pl/300x300/7F8C8D/FFF/?text=img+Member">
+								<h4>Account 4</h4>
+								<p>訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容</p>
+							</a>
+						</li>
+						<li>
+							<a href="message.html">
+								<img class="member-img pull-left" src="http://fakeimg.pl/300x300/7F8C8D/FFF/?text=img+Member">
+								<h4>Account 5</h4>
+								<p>訊息內容訊息內容訊息內容</p>
+							</a>
+						</li>
+						<li class="more"><a href="message.html">更多訊息</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="account.html">基本資料</a></li>
+						<li><a href="password.html">修改密碼</a></li>
+						<li class="divider"></li>
+						<li><a href="teacher-account.html">老師資料</a></li>
+						<li class="divider"></li>
+						<li><a href="index.html">登出</a></li>
+					</ul>
+				</li>
+			</ul>
+			<form class="navbar-form navbar-right" role="search">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Search">
+				</div>
+				<a href="search.html" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></a>
+			</form>
+		</div><!-- /navbar-collapse -->
+	</div><!-- /container -->
+</nav><!--/nav --><div class="container">
+	<div class="row">
+		<div class="col-sm-2 col-md-2 col-lg-2">
+			<div class="list-group m-top-3">
+	<div class="list-group-item list-title-item">
+		課程管理
+	</div>
+	<a href="subject-list.html" class="list-group-item">
+		<span class="glyphicon glyphicon-calendar"></span>課程列表
+	</a>
+	<a data-toggle="modal" href="#modal-select-contact" class="list-group-item">
+		<span class="glyphicon glyphicon-notebook"></span>管理聯絡簿
+	</a>
+	<a data-toggle="modal" href="#modal-select-exam" class="list-group-item">
+		<span class="glyphicon glyphicon-pencil"></span>成績登記
+	</a>
+	<a data-toggle="modal" href="#modal-select-rollcall" class="list-group-item">
+		<span class="glyphicon glyphicon-check"></span>上課點名
+	</a>
+</div>
+		</div><!-- col-md-2 col-lg-2 -->
+		<div class="col-sm-10 col-md-10 col-lg-10">
+			<div class="page-block">
+				<div class="page-header">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<h3>課程列表</h3>
+						</div><!-- /col-lg-6 col-md-6 -->
+						<div class="col-lg-6 col-md-6 col-sm-6 text-right">
+							<div class="btn-group btn-group-sm m-top-2">
+								<a class="btn btn-default active" href="subject-list.html">
+									<span class="glyphicon glyphicon-list"></span>
+								</a>
+								<a class="btn btn-default" href="subject.html">
+									<span class="glyphicon glyphicon-calendar"></span>
+								</a>
+							</div><!-- /btn-group -->
+						</div><!-- /col-lg-8 col-md-8 -->
+					</div><!-- /row -->
+				</div><!-- /page-header -->
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th class="text-left">課程</th>
+							<th class="text-left">班級</th>
+							<th class="text-left">時間</th>
+							<th class="text-right">管理</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>高一數學</td>
+							<td>班級 1</td>
+							<td>週二 10:00 - 11:00</td>
+							<td class="text-right">
+								<a class="btn btn-default btn-xs" href="contact-book-back.html">管理聯絡簿</a>
+								<a class="btn btn-default btn-xs" href="exam.html">成績登記</a>
+								<a class="btn btn-default btn-xs" href="rollcall.html">上課點名</a>
+							</td>
+						</tr>
+						<tr>
+							<td>高二數學</td>
+							<td>班級 2</td>
+							<td>週四 10:00 - 11:00</td>
+							<td class="text-right">
+								<a class="btn btn-default btn-xs" href="contact-book-back.html">管理聯絡簿</a>
+								<a class="btn btn-default btn-xs" href="exam.html">成績登記</a>
+								<a class="btn btn-default btn-xs" href="rollcall.html">上課點名</a>
+							</td>
+						</tr>
+						<tr>
+							<td>高二數學</td>
+							<td>班級 3</td>
+							<td>週六 10:00 - 11:00</td>
+							<td class="text-right">
+								<a class="btn btn-default btn-xs" href="contact-book-back.html">管理聯絡簿</a>
+								<a class="btn btn-default btn-xs" href="exam.html">成績登記</a>
+								<a class="btn btn-default btn-xs" href="rollcall.html">上課點名</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div><!-- /page-block -->
+		</div><!-- /col-md-10 col-lg-10 -->
+	</div><!-- /row -->
+</div><!-- /container -->
+    </div>
+
+    <footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 col-md-6 col-lg-6 ">
+				<p>Copyright © 2014 Austin Eonline.</p>
+			</div><!-- /col-md-6 -->
+			<div class="col-sm-8 col-md-6 col-lg-6 text-right">
+				<ul class="list-inline">
+					<li><a href="about.html">About</a></li>
+					<li><a href="terms.html">Terms of Service</a></li>
+					<li><a href="privacy.html">Privacy</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="#" target="_blank"><span class="glyphicon glyphicon-facebook"></span></a></li>
+				</ul>
+			</div><!-- /col-md-6 -->
+		</div><!-- /row -->
+	</div><!-- /container -->
+</footer><!-- /footer -->
+    <!-- login Modal -->
+<div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">會員登入</h4>
+			</div>
+			<form role="form">
+				<div class="modal-body">
+					<div class="form-group">
+						<input type="email" class="form-control" placeholder="請輸入 email">
+						<span class="help-block">Help text</span>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="請輸入密碼">
+						<span class="help-block">Help text</span>
+					</div><!-- /form-group -->
+				</div><!-- /modal-body -->
+				<div class="modal-footer">
+					<span class="pull-left">
+						<a data-toggle="modal" href="#modal-forget">忘記密碼</a> / <a href="signup.html">加入會員</a>
+					</span>	
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary" data-dismiss="modal">登入</button>
+				</div><!-- /modal-footer -->
+			</form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal --><!-- forget Modal -->
+<div class="modal fade" id="modal-forget" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">忘記密碼</h4>
+			</div>
+			<form role="form">
+				<div class="modal-body">
+					<div class="form-group">
+						<label>請輸入您的電子郵件信箱，我們會將寄出重設密碼連結給您。</label>
+						<input type="email" class="form-control" placeholder="請輸入您的電子郵件信箱">
+					</div><!-- /form-group -->
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary" data-toggle="modal" href="#modal-forget-done">送出</button>
+				</div>
+			</form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- forget Modal -->
+<div class="modal fade" id="modal-forget-done" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">忘記密碼</h4>
+			</div>
+			<form role="form">
+				<div class="modal-body">
+					<p>重設密碼連結通知信已寄出，請至您的電子信箱收信，並依信中步驟重設密碼。</p>
+				</div>
+			</form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal --><!-- login Modal -->
+<div class="modal fade" id="modal-comment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">上課狀況</h4>
+			</div>
+			<form role="form">
+				<div class="modal-body">
+					<div class="form-group m-bottom-0">
+						<label class="control-label"><img class="member-img" src="http://fakeimg.pl/300x300/7F8C8D/FFF/?text=img+Member">王小明</label>
+						<textarea class="form-control" rows="5"></textarea>
+					</div><!-- /form-group -->
+				</div><!-- /modal-body -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary" data-dismiss="modal">儲存</button>
+				</div><!-- /modal-footer -->
+			</form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal --><!-- login Modal -->
+<div class="modal fade" id="modal-exam" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">新增成績</h4>
+			</div>
+			<form role="form" class="form-horizontal">
+				<div class="modal-body">
+					<div class="form-group">
+						<label class="col-sm-3 control-label">日期</label>
+						<div class="col-sm-9">
+							<input type="date" class="form-control">
+						</div>
+					</div><!-- /form-group -->
+					<hr>
+					<div class="form-group">
+						<label class="col-sm-3 control-label">王小明</label>
+						<div class="col-sm-9">
+							<input class="form-control">
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">王中明</label>
+						<div class="col-sm-9">
+							<input class="form-control">
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">王大明</label>
+						<div class="col-sm-9">
+							<input class="form-control">
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">張小明</label>
+						<div class="col-sm-9">
+							<input class="form-control">
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">張中明</label>
+						<div class="col-sm-9">
+							<input class="form-control">
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">張大明</label>
+						<div class="col-sm-9">
+							<input class="form-control">
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">李小明</label>
+						<div class="col-sm-9">
+							<input class="form-control">
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">李中明</label>
+						<div class="col-sm-9">
+							<input class="form-control">
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">李大明</label>
+						<div class="col-sm-9">
+							<input class="form-control">
+						</div>
+					</div><!-- /form-group -->
+				</div><!-- /modal-body -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary" data-dismiss="modal">儲存</button>
+				</div><!-- /modal-footer -->
+			</form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal --><!-- login Modal -->
+<div class="modal fade" id="modal-exam-edit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">編輯成績</h4>
+			</div>
+			<form role="form" class="form-horizontal">
+				<div class="modal-body">
+					<div class="form-group">
+						<label class="col-sm-3 control-label">日期</label>
+						<div class="col-sm-9">
+							<input type="date" class="form-control">
+						</div>
+					</div><!-- /form-group -->
+					<hr>
+					<div class="form-group">
+						<label class="col-sm-3 control-label">王小明</label>
+						<div class="col-sm-9">
+							<input class="form-control" value="80">
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">王中明</label>
+						<div class="col-sm-9">
+							<input class="form-control" value="80">
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">王大明</label>
+						<div class="col-sm-9">
+							<input class="form-control" value="80">
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">張小明</label>
+						<div class="col-sm-9">
+							<input class="form-control" value="80">
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">張中明</label>
+						<div class="col-sm-9">
+							<input class="form-control" value="80">
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">張大明</label>
+						<div class="col-sm-9">
+							<input class="form-control" value="80">
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">李小明</label>
+						<div class="col-sm-9">
+							<input class="form-control" value="80">
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">李中明</label>
+						<div class="col-sm-9">
+							<input class="form-control" value="80">
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">李大明</label>
+						<div class="col-sm-9">
+							<input class="form-control" value="80">
+						</div>
+					</div><!-- /form-group -->
+				</div><!-- /modal-body -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary" data-dismiss="modal">儲存</button>
+				</div><!-- /modal-footer -->
+			</form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal --><!-- forget Modal -->
+<div class="modal fade" id="modal-request" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">申請已送出</h4>
+			</div>
+			<form role="form">
+				<div class="modal-body">
+					<p>上課申請已送出，我們將有專人與您聯絡。</p>
+				</div>
+			</form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal --><!-- login Modal -->
+<div class="modal fade" id="modal-select-exam" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">選擇班級</h4>
+			</div>
+			<form role="form">
+				<div class="modal-body">
+					<div class="form-group m-bottom-0">
+						<label class="control-label">請選擇欲登記成績之班級</label>
+						<select class="form-control">
+							<option>XX 課程 班級 1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</div><!-- /form-group -->
+				</div><!-- /modal-body -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<a href="exam.html" class="btn btn-primary">確定</a>
+				</div><!-- /modal-footer -->
+			</form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal --><!-- login Modal -->
+<div class="modal fade" id="modal-select-contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">選擇班級</h4>
+			</div>
+			<form role="form">
+				<div class="modal-body">
+					<div class="form-group m-bottom-0">
+						<label class="control-label">請選擇欲管理聯絡簿之班級</label>
+						<select class="form-control">
+							<option>XX 課程 班級 1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</div><!-- /form-group -->
+				</div><!-- /modal-body -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<a href="contact-book-back.html" class="btn btn-primary">確定</a>
+				</div><!-- /modal-footer -->
+			</form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal --><!-- login Modal -->
+<div class="modal fade" id="modal-select-rollcall" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">選擇班級</h4>
+			</div>
+			<form role="form">
+				<div class="modal-body">
+					<div class="form-group m-bottom-0">
+						<label class="control-label">請選擇欲點名之班級</label>
+						<select class="form-control">
+							<option>XX 課程 班級 1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</div><!-- /form-group -->
+				</div><!-- /modal-body -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<a href="rollcall.html" class="btn btn-primary">確定</a>
+				</div><!-- /modal-footer -->
+			</form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal --><!-- login Modal -->
+<div class="modal fade" id="modal-rollcall" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">新增點名</h4>
+			</div>
+			<form role="form" class="form-horizontal">
+				<div class="modal-body">
+					<div class="form-group">
+						<label class="col-sm-3 control-label">日期</label>
+						<div class="col-sm-9">
+							<input type="date" class="form-control">
+						</div>
+					</div><!-- /form-group -->
+					<hr>
+					<div class="form-group">
+						<label class="col-sm-3 control-label">王小明</label>
+						<div class="col-sm-9">
+							<div class="checkbox">
+								<input type="checkbox">
+							</div><!-- /checkbox -->
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">王中明</label>
+						<div class="col-sm-9">
+							<div class="checkbox">
+								<input type="checkbox">
+							</div><!-- /checkbox -->
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">王大明</label>
+						<div class="col-sm-9">
+							<div class="checkbox">
+								<input type="checkbox">
+							</div><!-- /checkbox -->
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">張小明</label>
+						<div class="col-sm-9">
+							<div class="checkbox">
+								<input type="checkbox">
+							</div><!-- /checkbox -->
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">張中明</label>
+						<div class="col-sm-9">
+							<div class="checkbox">
+								<input type="checkbox">
+							</div><!-- /checkbox -->
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">張大明</label>
+						<div class="col-sm-9">
+							<div class="checkbox">
+								<input type="checkbox">
+							</div><!-- /checkbox -->
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">李小明</label>
+						<div class="col-sm-9">
+							<div class="checkbox">
+								<input type="checkbox">
+							</div><!-- /checkbox -->
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">李中明</label>
+						<div class="col-sm-9">
+							<div class="checkbox">
+								<input type="checkbox">
+							</div><!-- /checkbox -->
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">李大明</label>
+						<div class="col-sm-9">
+							<div class="checkbox">
+								<input type="checkbox">
+							</div><!-- /checkbox -->
+						</div>
+					</div><!-- /form-group -->
+				</div><!-- /modal-body -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary" data-dismiss="modal">儲存</button>
+				</div><!-- /modal-footer -->
+			</form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal --><!-- login Modal -->
+<div class="modal fade" id="modal-rollcall-edit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">編輯點名</h4>
+			</div>
+			<form role="form" class="form-horizontal">
+				<div class="modal-body">
+					<div class="form-group">
+						<label class="col-sm-3 control-label">日期</label>
+						<div class="col-sm-9">
+							<input type="date" class="form-control">
+						</div>
+					</div><!-- /form-group -->
+					<hr>
+					<div class="form-group">
+						<label class="col-sm-3 control-label">王小明</label>
+						<div class="col-sm-9">
+							<div class="checkbox">
+								<input type="checkbox">
+							</div><!-- /checkbox -->
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">王中明</label>
+						<div class="col-sm-9">
+							<div class="checkbox">
+								<input type="checkbox">
+							</div><!-- /checkbox -->
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">王大明</label>
+						<div class="col-sm-9">
+							<div class="checkbox">
+								<input type="checkbox">
+							</div><!-- /checkbox -->
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">張小明</label>
+						<div class="col-sm-9">
+							<div class="checkbox">
+								<input type="checkbox">
+							</div><!-- /checkbox -->
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">張中明</label>
+						<div class="col-sm-9">
+							<div class="checkbox">
+								<input type="checkbox">
+							</div><!-- /checkbox -->
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">張大明</label>
+						<div class="col-sm-9">
+							<div class="checkbox">
+								<input type="checkbox">
+							</div><!-- /checkbox -->
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">李小明</label>
+						<div class="col-sm-9">
+							<div class="checkbox">
+								<input type="checkbox">
+							</div><!-- /checkbox -->
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">李中明</label>
+						<div class="col-sm-9">
+							<div class="checkbox">
+								<input type="checkbox">
+							</div><!-- /checkbox -->
+						</div>
+					</div><!-- /form-group -->
+					<div class="form-group">
+						<label class="col-sm-3 control-label">李大明</label>
+						<div class="col-sm-9">
+							<div class="checkbox">
+								<input type="checkbox">
+							</div><!-- /checkbox -->
+						</div>
+					</div><!-- /form-group -->
+				</div><!-- /modal-body -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary" data-dismiss="modal">儲存</button>
+				</div><!-- /modal-footer -->
+			</form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+    <!-- Javascripts -->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+          $(window).scroll(function () {
+            if ($(this).scrollTop() > 200) {
+              $('#scrolltotop').fadeIn('slow');
+            } else {
+              $('#scrolltotop').fadeOut('slow');
+            }
+          });
+          $('#scrolltotop').click(function () {
+            $("html, body").animate({
+              scrollTop: 0
+            }, 500);
+            return false;
+          });
+        });
+      </script>
+    <!-- from Bootstrap 3 -->
+    <script src="javascripts/affix.js"></script>
+    <script src="javascripts/alert.js"></script>
+    <script src="javascripts/button.js"></script>
+    <script src="javascripts/carousel.js"></script>
+    <script src="javascripts/collapse.js"></script>
+    <script src="javascripts/dropdown.js"></script>
+    <script src="javascripts/modal.js"></script>
+    <script src="javascripts/popover.js"></script>
+    <script src="javascripts/scrollspy.js"></script>
+    <script src="javascripts/tab.js"></script>
+    <script src="javascripts/tooltip.js"></script>
+    <script src="javascripts/transition.js"></script>
+    <script src="javascripts/bootstrap_calendar.js"></script>
+    <script type="text/javascript">
+      $(document).ready( function(){
+        theMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        theDays = ["日", "一", "二", "三", "四", "五", "六"];
+
+        $('.calendar_test').calendar({
+          months: theMonths,
+          days: theDays,
+          req_ajax: {
+            type: 'get',
+            url: 'json.php'
+          }
+        });
+      });
+    </script>
+    <script src="javascripts/jquery.sequence-min.js"></script>
+    <script src="javascripts/contact.js"></script>
+    <script src="javascripts/qubico.js"></script>
+  </body>
+</html>
