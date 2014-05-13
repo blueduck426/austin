@@ -4376,6 +4376,24 @@ input[type="button"].btn-block {
   color: white;
 }
 
+/* line 644, ../sass/_navbar.scss */
+#system-alert {
+  position: fixed;
+  z-index: 1000;
+  top: 70px;
+  right: 0;
+  left: 0;
+  background: rgba(212, 0, 0, 0.85);
+  color: #fff;
+  padding: 8px 15px;
+}
+
+/* line 655, ../sass/_navbar.scss */
+#system-alert a {
+  color: #fff;
+  text-decoration: underline;
+}
+
 /* line 6, ../sass/_breadcrumbs.scss */
 .breadcrumb {
   padding: 0px;
