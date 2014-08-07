@@ -8593,7 +8593,19 @@ label .member-img {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-/* line 61, ../sass/_wrapper.scss */
+/* line 60, ../sass/_wrapper.scss */
+.message-wrapper .message-right .all_messages .comment-who {
+  border-bottom: 1px solid #d2d2d2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+/* line 66, ../sass/_wrapper.scss */
+.message-wrapper .message-right .all_messages .comment-who .form-group {
+  margin: 15px;
+}
+/* line 71, ../sass/_wrapper.scss */
 .message-wrapper .message-right .add_comment {
   position: absolute;
   bottom: 0px;
@@ -8604,4 +8616,57 @@ label .member-img {
   right: 15px;
   width: auto;
   padding: 15px 20px;
+}
+
+/* line 1, ../sass/_tagsinput.scss */
+.bootstrap-tagsinput {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  display: inline-block;
+  padding: 6px 12px;
+  color: #555;
+  vertical-align: middle;
+  border-radius: 4px;
+  width: 100%;
+  cursor: text;
+}
+/* line 13, ../sass/_tagsinput.scss */
+.bootstrap-tagsinput input {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  width: auto !important;
+  max-width: inherit;
+}
+/* line 23, ../sass/_tagsinput.scss */
+.bootstrap-tagsinput input:focus {
+  border: none;
+  box-shadow: none;
+}
+/* line 29, ../sass/_tagsinput.scss */
+.bootstrap-tagsinput .tag {
+  margin-right: 2px;
+  color: white;
+}
+/* line 33, ../sass/_tagsinput.scss */
+.bootstrap-tagsinput .tag [data-role="remove"] {
+  margin-left: 8px;
+  cursor: pointer;
+}
+/* line 36, ../sass/_tagsinput.scss */
+.bootstrap-tagsinput .tag [data-role="remove"]:after {
+  content: "x";
+  padding: 0px 2px;
+}
+/* line 40, ../sass/_tagsinput.scss */
+.bootstrap-tagsinput .tag [data-role="remove"]:hover {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+/* line 42, ../sass/_tagsinput.scss */
+.bootstrap-tagsinput .tag [data-role="remove"]:hover:active {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
